@@ -1,332 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        html {background: white;}
-    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
+    <title>Kurt Berglund – Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+            color: #222;
+        }
+        h1, h2, h3 {
+            color: #003366;
+        }
+        .section {
+            margin-bottom: 35px;
+        }
+        .profile-pic {
+            float: right;
+            margin-left: 20px;
+            border-radius: 6px;
+        }
+        a {
+            color: #003366;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
+
 <body>
-<!--Main header Resume-->
-    <h1>Kurt Berglund</h1>
-    <img src="./Assets/Images/MyPic.PNG" alt="Kurt's Profile Picture" height="150" width="150"
-    <br />
-    <h2>Summary/Objective</h2>
+
+<h1>Kurt Berglund</h1>
+
+<img src="./Assets/Images/MyPic.PNG" alt="Kurt Berglund" height="150" width="150" class="profile-pic">
+
+<!-- SUMMARY -->
+<div class="section">
+    <h2>Professional Summary</h2>
     <p>
-        Systems and Network Engineer with 10+ years of experience supporting enterprise IT environments 
-        across federal agencies and private organizations. Strong background in systems administration, 
-        network engineering, cybersecurity, virtualization, and IT operations. Known for rapid learning, 
-        cross‑team collaboration, and delivering reliable technical solutions. Seeking opportunities to 
-        expand expertise in modern infrastructure, cloud, and security technologies.
+        Systems and Network Engineer with 10+ years of experience supporting enterprise and federal environments. 
+        Strong background in systems administration, network engineering, cybersecurity, cloud, and virtualization. 
+        Known for rapid learning, cross‑team collaboration, and maintaining high‑availability infrastructure. 
+        Seeking to advance into modern infrastructure, cloud, and security engineering roles.
     </p>
-    <hr />
-<!--Educations-->
+</div>
+
+<!-- CORE SKILLS -->
+<div class="section">
+    <h2>Core Skills & Knowledge</h2>
+
+    <h3>Systems</h3>
+    <p>Windows Server, RedHat, Ubuntu, CentOS, macOS, Windows 10/11</p>
+
+    <h3>Networking</h3>
+    <p>
+        Cisco • Meraki • Juniper • Palo Alto • Firepower • HA/Failover • Network Monitoring • DNS • DHCP • NAT • ACLs<br>
+        <b>Switching:</b> VLANs • Trunking • Inter‑VLAN Routing • Spanning Tree (STP/RSTP/MSTP) • Port Security • VTP • IPSec/SSL VPN<br>
+        <b>Routing Protocols:</b> OSPF • EIGRP • BGP • RIP • Static Routing<br>
+        <b>Network Protocols:</b> TCP/IP • UDP • ICMP • LLDP • CDP
+    </p>
+
+    <h3>Security</h3>
+    <p>Splunk, Nessus, Nmap, Wireshark, BitLocker, RSA, CyberArk, Endpoint Encryption, DISA STIGs, Vulnerability Remediation</p>
+
+    <h3>Virtualization & Cloud</h3>
+    <p>VMware, Hyper‑V, VxRail, AWS, Azure</p>
+
+    <h3>Backup & Storage</h3>
+    <p>Veeam, Avamar, BackupExec, Dell PowerProtect, EqualLogic</p>
+
+    <h3>Management & Automation</h3>
+    <p>SCCM, SCOM, BigFix, WSUS, Citrix, Intune, AirWatch, SolarWinds, Ansible</p>
+
+    <h3>Scripting & Development</h3>
+    <p>PowerShell, Bash, Python, HTML, CSS, JavaScript, YAML</p>
+
+    <h3>Ticketing Systems</h3>
+    <p>ServiceNow, Remedy</p>
+
+    <h3>Clearance</h3>
+    <p>Public Trust – Active (NIST)</p>
+</div>
+
+<!-- CERTIFICATIONS -->
+<div class="section">
+    <h2>Certifications</h2>
+    <ul>
+        <li>ITIL v3 Foundation</li>
+        <li>Microsoft Certified Professional</li>
+        <li>Microsoft Certified Systems Administrator</li>
+        <li>CompTIA Network+</li>
+        <li>CompTIA A+</li>
+        <li>Cisco Certified Entry Networking Technician</li>
+    </ul>
+</div>
+
+<!-- EXPERIENCE -->
+<div class="section">
+    <h2>Professional Experience</h2>
+
+    <h3>Systems / Network Engineer</h3>
+    <p><i>NCCoE / NIST – ITC Federal | Rockville/Gaithersburg, MD</i> — June 2024 – Present</p>
+    <ul>
+        <li>Upgraded RedHat 7 → RedHat 8; maintained mixed Linux/Windows server environments.</li>
+        <li>Managed DNS via Infoblox; supported VPN, network, and RSA authentication issues.</li>
+        <li>Assisted with firewall policy cleanup and rule creation (Palo Alto, Firepower).</li>
+        <li>Automated RHEL patching using Ansible/YAML; developed Bash scripts for baselines.</li>
+        <li>Remediated vulnerabilities identified through Nessus across Linux/Windows systems.</li>
+        <li>Applied DISA STIGs and GPO hardening for federal compliance.</li>
+        <li>Monitored system/network performance using SolarWinds Orion.</li>
+        <li>Built new lab networks including VLANs, Wi‑Fi, and documentation.</li>
+        <li>Created and updated network diagrams using Visio.</li>
+        <li>Contributed to modernization projects:
+            <ul>
+                <li>Juniper → Cisco switch migration</li>
+                <li>Juniper SRX → Cisco Firepower</li>
+                <li>Aruba → Meraki wireless</li>
+                <li>Spine‑leaf topology deployment</li>
+                <li>Border router upgrade</li>
+                <li>Palo Alto Prisma & Cortex integration</li>
+            </ul>
+        </li>
+        <li>Configured Syslog server for centralized logging.</li>
+        <li>Performed onboarding tasks: AD accounts, OU placement, VPN provisioning.</li>
+        <li>Assisted with OKTA integration across applications.</li>
+    </ul>
+
+    <h3>Systems Engineer</h3>
+    <p><i>Department of Justice – TRIA / Quadrant / Intellidyne | Washington, DC</i> — Oct 2021 – Apr 2024</p>
+    <ul>
+        <li>Migrated backup operations from Veeam to Avamar; ensured successful daily backups.</li>
+        <li>Upgraded SCOM 2012 → 2016; configured AWS monitoring.</li>
+        <li>Supported printer rollouts, IP assignments, drivers, and XMedius email‑to‑fax.</li>
+        <li>Provided Tier 2 support for BitLocker, AD, and hardware/software issues.</li>
+        <li>Built and decommissioned servers (vSphere, VxRail); deployed VxRail in Dallas.</li>
+        <li>Administered BigFix, SCCM, SCOM, Citrix, XenMobile, VMware.</li>
+        <li>Updated Cisco switch OS versions and deployed WhatsUp Gold monitoring.</li>
+    </ul>
+
+    <h3>IT Support Specialist</h3>
+    <p><i>Department of Energy – OneSource | Germantown, MD</i> — Oct 2020 – Sep 2021</p>
+    <ul>
+        <li>Delivered Tier 1/2 support for 5,000+ users across DOE locations.</li>
+        <li>Troubleshot wired/wireless connectivity, hardware/software issues, and mobile devices.</li>
+        <li>Supported VPN, RSA SecurID, AD, Entrust, BitLocker, McAfee encryption.</li>
+    </ul>
+
+    <h3>Information Systems Administrator / Manager</h3>
+    <p><i>JSI – John Staurulakis Inc. | Greenbelt, MD</i> — Jul 2013 – Sep 2020</p>
+    <ul>
+        <li>Led system/network administration, IT security, desktop support, and operations.</li>
+        <li>Conducted vulnerability assessments, exploitation testing, and remediation.</li>
+        <li>Implemented VMware environment and HPE SAN storage.</li>
+        <li>Migrated Exchange 2003 → Office 365; administered SharePoint 2013.</li>
+        <li>Supported Cisco firewalls, routers, switches, IP phones, and VPN configurations.</li>
+    </ul>
+
+    <h3>Desktop Support Specialist (Tier 2)</h3>
+    <p><i>MedImmune – TEKsystems | Gaithersburg, MD</i> — Feb 2012 – Jul 2013</p>
+    <ul>
+        <li>Provided Tier 2 support for 2,000+ users; imaged/deployed systems using SCCM.</li>
+        <li>Supported Blackberry/iPhone, VPN, printers, encryption software, and AD accounts.</li>
+    </ul>
+
+    <h3>Helpdesk Analyst / Service Desk Analyst</h3>
+    <p><i>NIST – Powertek | Gaithersburg, MD</i> — Jun 2010 – Feb 2012</p>
+    <ul>
+        <li>Delivered first‑line support for 5,000+ users across multiple NIST locations.</li>
+        <li>Managed AD accounts, configured desktops/laptops/mobile devices, and supported VPN.</li>
+        <li>Restored files using Tivoli Storage Manager; resolved issues via LANDesk and Remedy.</li>
+    </ul>
+</div>
+
+<!-- EDUCATION -->
+<div class="section">
     <h2>Education</h2>
     <ul>
-        <li>Associates Degree in Network Information Systems - TESST College of Technology | Graduated:October.29,2009</li>
-        <li>Bachelor of Science and Administration Degree in Business Management - AMA Computer College | Graduated:March.29,2004</li>
+        <li>A.A.S., Network Information Systems — TESST College of Technology (2009)</li>
+        <li>B.S., Business Administration (Management) — AMA Computer College (2004)</li>
     </ul>
-    <hr />
-<!--Certifications-->
-    <h2>Certifications</h2>
-    <uL>
-        <li>ITIL V3 Foundation</li>
-        <li>Microsoft Certified Systems Administrator (MCSA)</li>
-        <li>Microsoft Certified Professional (MCP)</li>
-        <li>CompTIA Network+ Certified Professional</li>
-        <li>CompTIA A+ Certified IT Technician</li>
-        <li>Cisco Certified Entry Networking Technician (CCENT)</li>
-    </uL>
-    <hr />
-<!--Clearance-->
-    <h2>Clearance</h2>
-    <p>Public Trust</p>
-    <hr />
-<!--Skills and Knowledge-->
-    <h2>Skills and Knowlege</h2>
-    <ul>
-        <li><b>IT Management:</b> Technical Writing/Documentation, Leadership and Supervision, Communication,
-               Project Management, Time Management, Strategic Thinking, Human and Interpersonal Management</li>
-        <br />
-        <li><b>Operating Systems:</b> Windows Server 2022, Windows 11, MacOS, Kali, CentOS, Redhat, SUSE, IOS, Android, Junos</li>
-        <br />
-        <li><b>Desktop Applications:</b> MS Office, MS Access, Visio, Adobe Acrobat, Libre Office, Photoshop, 
-               Internet Explorer, Firefox, Chrome, Tor, Windows Media Player, VLC, iTunes, Thunderbird, Slack, Visual Studio Code, 
-               Zoom</li>
-        <br />
-        <li><b>Administration and Networking:</b> Active Directory, DNS. DHCP, Exchange, Office365, LAN, WAN, WLAN, SQL Server, TCP/IP, 
-            SonicWALL, Cisco Routers and Switches, Cisco ASA, Cisco Meraki, Patching and Cabling (Ethernet), VMWare, Hyper-V, Sun xVM Virtual Box, 
-            Microsoft Virtual PC, WSUS, IIS, Azure, Business Desktop Deployment (BDD), SCCM, Citrix, SCOM, VxRail, Intune, BigFix, 
-            Zscaler, AirWatch, Infoblox, SolarWinds Orion, Ansible</li>
-        <br />
-        <li><b>Security Applications and Pentest tools:</b> Splunk, Nessus, Nmap, Wireshark, Hydra McAfee VirusScan Enterprise, 
-               Proofpoint, Endpoint Encryption, Entrust, Bitlocker, RSA, CyberArc, Crowdsdtrike</li>
-        <br />
-        <li><b>Software/Web Development:</b> Powershell, HTML, CSS, Javascript,GitHub, bash </li>
-        <br />
-        <li><b>Backup:</b> VEAAM, Avamar, Backupexec</li>
-        <br />
-        <li><b>Hardware:</b> Dell, HP, Cisco, Juniper, Netgear Polycom, MS Surface, Apple,</li>
-        <br />
-        <li><b>Storage:</b> DELL PowerProtect Data Manager, Dell Equalogic</li>
-        <br />
-        <li><b>Mobile:</b> Samsung, Blackberry, iPhone, iPAD</li>
-        <br/>
-        <li><b>Ticketing Systems:</b> Remedy, Service Now</li>       
-     </ul>
-    <hr />
-<!--Work Experience-->
-    <h2>Work Experience</h2>
-<!--NIST/NCCOE-->
-    <ul>
-        <li><h3>Systems/Network Engineer - ITC Federal Supporting National Cybersecurity Center of Excellence / National Institute of Standards and Technology</h3></li>
-        <p>June 2024 - Present</p>
-        <ul>
-            <li>Juniper to Cisco switch migration for all lab environments</li>
-                <ul>
-                    <li>Transpose Juniper configuration to Cisco configuration</li>
-                    <li>Deployed new Cisco access switches and recabling</li>
-                    <li>Decommission old Juniper devices after retention period</li>
-                </ul>
-            <li>Setup lab networks per requests</li>
-                <ul>
-                    <li>Assign Public facing IP address to allow lab traffic to gain internet access (Paloalto)</li>
-                    <li>Assign vlans for lab and apply to applicable network devices</li>
-                    <li>Modify security policies on the Firewall (Juniper SRX) for securing lab traffic</li>
-                    <li>Create Wireless SSID per lab request (Aruba)</li>
-                </ul>
-            <li>Administer, Maintain and configure Windows Servers and Linux Servers (Redhat)</li>
-                <ul>
-                    <li>Apply security patches</li>
-                    <li>Build and configure per customer requirements in VMWare</li>    
-                </ul>
-            <li>Assisted with reviewing and maintaining security policies on Paloalto and Cisco Firepowers</li>
-            <li>Involved with planning of rebuilding the network infrastructure for NCCoE. (Ongoing project)</li>
-                <ul>
-                    <li>Spine Leaf architecture with VMWare NSX</li>
-                    <li>Migrating Juniper SRX firewall to Cisco Firepower.</li>
-                    <li>Migrating Juniper Aggregation switch to Cisco Nexus switch.</li>
-                    <li>Replacing Juniper Network devices with Cisco devices on NCCoE production Networks</li>
-                    <li>Replace Aruba wireless system with Meraki Wireless system</li>
-                    <li>Upgrade border router – the router which is responsible for connectivity between NIST and NCCoE</li>
-                </ul>
-            <li>Administer Aruba Wireless Network</li>
-            <li>Assisted with troubleshooting VPN Access for remote users (Global Protect and RSA SecureID)</li>
-            <li>Assisted with troubleshooting Network connectivity issues</li>
-            <li>User Audit Reporting using Powershell scripts</li>
-            <li>SSL Certificate renewals</li>
-            <li>Remediate vulnerabilites found from tenbale/Nessus scans</li>
-            <li>Administer DNS requests using Infoblox and bindservers runnning on Redhat</li>
-            <li>Assisted Audio/Video Engineer with Extron Devices and networking. Conference room setups</li>
-            <li>Monitor Networked assets using Solarwinds and VMWare Operations for Logs</li>
-            <li>Onboarding process for Lab Users/Collaborators (Network access, AD Accounts, ServiceNow Accounts, GPO</li>
-            <li>Assist with OKTA integration to applications at NCCoE – With the assistance of the OKTA administrator at NIST and 3rd party vendors.</li>
-        </ul>
-    </ul>
-    <br />
-    <!--DOJ--> 
-    <ul>
-       <li><h3>Systems Engineer - Tria Federal Supporting Department of Justice</h3></li>
-       <p>September 2021 - April 2024</p>
-       <ul>
-            <li>Migrated Backup Jobs from VEEAM to AVAMAR</li>
-            <li>Assisted with setting up image and file level backup policies on Avamar and PPDM
-                and duplicating to AWS backup.</li>
-            <li>Deploying Servers on AWS and storage monitor</li>
-            <li>Responsible gathering IT Operations Report from SCOM, SCCM and Nessus and 
-            to ensure that all systems are up and running. </li>
-            <li>Upgraded SCOM 2012 to SCOM 2016 and setup monitoring capabilities to AWS environment</li>
-            <li>Responsible in making sure that Backup have completed successfully and resolve those 
-            that failed backup.</li>
-            <li>Printer Management:Assisted with Canon copier rollovers for multiple Buildings. 
-            Responsible for IP assignments, Drivers, Scan to email and assisted with Email to 
-            Fax functionality (Xmedius)</li>
-            <li>Assist Tier 2 with Bitlocker Recoveries, AD Account issues and requests</li>
-            <li>Assisted with Hardware and Software Inventory</li>
-            <li>Led Adobe FRL licensing implementation</li>
-            <li>Decommissioning and Building New Servers (Vsphere and VxRail) per client’s request</li>
-            <li>Assisted with Deploying and setting up VxRail System in Dallas Location</li>
-            <li>Systems Administration tasks using BigFix, SCCM, SCOM, Citrix, XenMobile, Vsphere and VxRail</li>
-                <ul>
-                    <li>Software Deployment</li>
-                    <li>Scheduled System Patching</li>
-                    <li>Agent/Client install for Monitoring (Laptops and Servers)</li>
-                    <li>Building and Deploying VM Servers</li>
-                    <li>Configuring and setting up SCOM alerts</li>
-                </ul>
-            <li>Serve as one of the Escalation points for Citrix/VDI issues</li>
-            <li>Assisted with resolving Server hardware issues</li>
-            <li>Assist with Escalated issues from Helpdesk team</li>
-            <li>Cross trained to assist Network Engineers and Cyber Security Engineer</li>
-                <ul>
-                    <li>Assist with mitigating Vulnerabilities found from Tenable Scans</li>
-                </ul>
-            <li>Assist with AirWatch Configurations (Wi-Fi auto connect)</li>
-            <li>Assist with Updating Cisco Switch OS Version to current </li>
-            <li>Deployed WhatsUp Gold Monitoring tool.</li>
-            <li>Responsible for resolving Monitoring tool alerts</li>
-                <ul>
-                    <li>SQL Database and Server availabilty</li>
-                    <li>Server Storage alerts</li>
-                    <li>Certificate Expiration alerts: Team effort</li>
-                </ul>
-            <li>Responsible to maintain and update all Systems Inventory</li>
-            <li>Monthly tasks</li>
-                <ul>
-                    <li>Ensure all systems are reporting to monitoring and deployment tools such as 
-                    BigFix, SCCM, whatsup Gold, SCOM, and  </li>
-                  <li>DNS Cleanup - Ensure unused Static DNS entried are removed</li>
-                    <li>Ensure all application servers are grouped to avoid confusion
-                        with patching and reboot jobs</li>
-                </ul>
-       </ul>
-       <br />
-       <!--DOE-->
-       <li><h3>IT Support Specialist - OneSource Supporting Department of Energy</h3></li> 
-       <p>October 2020 - September 2021</p>
-       <ul>
-            <li>Provide critical first-line technical support for: Windows based laptops, desktops, 
-                Printers, Mobile Device (Apple and Android devices), Commercial (MS Office, Adobe, Outlook, etc.) and agency-specific software to approximately 5,000 end users in All DOE locations</li>
-            <li>Communicate with customers to ensure support needs are met.</li>
-            <li>Troubleshoot network connectivity issues. (Wired and Wireless)</li>
-            <li>Determine source of problems (hardware, software, user access, etc.)</li>
-            <li>Use Service Now ticketing system to create, track, document and resolve trouble tickets.</li>
-            <li>Exposed with the following IT Technology:</li>
-                <ul>
-                    <li>Cisco AnyConnect - VPN</li>
-                    <li>RSA SecurID – 2 Factor Authentication</li>
-                    <li>Active Directory – Password resets and modifying OU</li>
-                    <li>Entrust – Email Encryption</li>
-                        <ul>
-                            <li>Troubleshoot why users are unable to encrypt email with Entrust</li>
-                            <li>Configure entrust for users and test</li>
-                        </ul>
-                    <li>Bitlocker and McAfee endpoint encryption – Hard Drive encryption</li>
-                        <ul>
-                            <li>Ensure User's Bitlocker and McAfee endoint protection is enabled,
-                                before travel overseas
-                            </li>
-                        </ul>
-                </ul>
-        </ul>
-        <br />
-        <li><h3>Systems Administrator/Manager - JSI (John Staurulakis Inc)</h3></li>
-        <p>July 2013 - September 2020</p>
-        <ul>
-            <li>Serve as a role in System and Network Administration, IT Security, Desktop support 
-                and IT Management</li>
-            <li>Provide knowledge to users on IT Security Awareness </li>
-            <li>Perform Vulnerability Assessments of IT infrastructure using Vulnerability and Network scanners</li>
-            <li>Assisted with performing Exploitation and Remediation/Mitigation</li>
-            <li>Perform Security Hardening of Windows Servers and Desktops</li>
-            <li>Manage and provide the deployment, monitoring, maintenance, development, upgrade, and support 
-                of all information technology systems, including servers, PC’s, operating systems, hardware, software, 
-                peripherals and application development, and telecommunication systems.</li>
-            <li>Analyze physical access to systems</li>
-            <li>Perform Patch management via WSUS </li>
-            <li>Assisted and Supervised with building and deploying servers</li>
-                <ul>
-                    <li>Upgrade WebSense Server</li>
-                    <li>Upgrade FTP Server with IIS</li>
-                    <li>Implement VMware Environment to IT infrastructure</li>
-                    <li>Migration of Physical servers to Virtual Environment (vSphere)</li>
-                    <li>Installation and configuration of HPE SANS storage</li>
-                    <li>Install and Upgrade Billquick (Accounting software) and SQL Server with IIS</li>
-                    <li>Assist with Network redesign project with Cisco Consultants</li>
-                </ul>
-            <li>IT Security projects</li>
-                <ul>
-                    <li>Firewall upgrade (Cisco ASA)</li>
-                    <li>Domain Controller Upgrades and Raising Forest and Domain Function levels</li>
-                    <li>Server and Desktop Patching using WSUS</li>
-                    <li>GPO – Password policy, Account Policy, Local/Audit Policy</li>
-                    <li>Deploy centralized AV management – McAfee ePO </li>
-                    <li>Changing Access Point passwords and SSID Control for Guests</li>
-                </ul>
-            <li>Oversee and participate in the development and administration of the Division’s annual budget; 
-                participate in the forecast of funds needed for staffing, equipment, materials, and supplies; 
-                monitor and approve expenditures; implement adjustments. </li>
-            <li>IT Management experience including the interviewing, hiring, training, and supervision of IT staff.</li>
-            <li>Plan the programs and operations of the division to meet the short and long-range goals of the 
-                Information Technology Division; oversee the operation of the division to implement goals and programs.</li>
-            <li>Assist Users with Hardware and Software issues</li>
-            <li>Assist Head of IT with upcoming projects</li>
-            <li>Build/Upgrade Servers (Server 2008 and Server 2012)</li>
-            <li>Backup and recover data using Backupexec12. Performed BackupExec upgrade</li>
-            <li>Migration from Exchange 2003 to Office365</li>
-            <li>Office365 Administration (Exchange and SharePoint)</li>
-            <li>Web filter using Websense</li>
-            <li>Resolving network and printer issues</li>
-            <li>Worked with Cisco Firewalls, Routers and Switches</li>
-            <li>SharePoint 2013 administration– Sites, Libraries and Permissions</li>
-            <li>Configuring Cisco IP Phones using Cisco Unity</li>
-            <li>Perform Desktop Support role</li>
-            <li>Assisted with configuring VPN with Cisco ASA (Firewall)</li>
-            <li>Active Directory, DNS, DHCP</li>
-            <li>Setup Video Conferences and Webinars for users.</li>
-            <li>Upgrade/Setup WSUS, FTP, Print, File and BillQuick Server.</li>
-       </ul>
-       <br />
-       <li><h3>Desktop Support Specialist (Tier 2) - Medimmune/Astrazeneca</h3></li>
-       <p>February 2012 - July 2013</p>
-       <ul>
-            <li>Provide Tier 2 technical support to approximately 2,000 users via telephone, 
-                email, Remote assistance programs and/or in-person. (Hardware and Software)</li>
-            <li>Communicate with customers to ensure support needs are met.</li>
-            <li>Building, imaging and deploying desktops and laptops using SCCM (System Center Configuration Manager)</li>
-            <li>Blackberry and iPhone support (mail and functionality issue)</li>
-            <li>Mobile management using Intune.</li>
-            <li>Troubleshoot network connectivity issues. (Wired and Wireless)</li>
-            <li>Create, delete and modify User and computer accounts in Active Directory</li>
-            <li>Minimal support with Cisco phones (Configuration)</li>
-            <li>Determine source of problems (hardware, software, user access, etc.)</li>
-            <li>Use Service Now ticketing system to create, track, document and resolve trouble tickets.</li>
-            <li>Encryption software (Safeguard)</li>
-            <li>Create, Support, and troubleshoot VPN client connections for all users, to be able to connect to 
-                our local private network.</li>
-            <li>Troubleshooting and Setting up Printers.</li>
-            <li>Replacing and installing hardware on laptops (Lenovo)</li>
-       </ul>
-       <br />
-       <li><h3>HelpDesk Analyst/Service Desk Analyst - Powertek supporting National Institute of Standards and Technology</h3></li>
-       <p>June 2010 - February 2012</p>
-       <ul>
-            <li>Provide critical first-line technical support for: Windows based laptops, desktops, Printers, 
-                Blackberry devices, Commercial (MS Office, Adobe, Outlook, etc.) and agency-specific software to 
-                approximately 5,000 end users in Gaithersburg, Boulder, and Remote users.</li>
-            <li>Modify and manage accounts in Active Directory for new users and for accounts created for functional purposes.</li>
-            <li>Work with NIST to implement and integrate new service offerings with NIST standards, policies, processes, 
-                and methods for an overall new set of service desk offerings.</li>
-            <li>Administer solid analytical, questioning, documenting, and problem-solving abilities through various 
-                methods of contact (phone, email, and in-person/walkup) to immediately diagnose cause(s) of hardware, 
-                software, and/or network failure.  </li>
-            <li>Configuring desktops, laptops, and mobile devices (Blackberry, iPhone, iPad) for enterprise on-site 
-                network connectivity or for off-site use using RSA SecureID or Secure Client VPN Software.</li>
-            <li>Restoring files using (Tivoli Storage Manager).</li>
-            <li>Resolving software problems with use of LANDesk (Windows 7 & XP)</li>
-            <li>Analyzing helpdesk tickets (Remedy).</li>
-            <li>Hard Disk encryption using Endpoint Encryption</li>
-            <li>Mail protection using Proofpoint</li>
-            <li>Small support with IOS iPad users. (Configure with network connectivity and Mail.)</li>
-       </ul>
-       <br />
-    </ul>
-    <hr />
-    <h3>Links</h3>
-    <p><a href="https://www.linkedin.com/in/kurt-berglund-4631851a">LinkedIn</a></p>
-    
-    <p><a href="./Documents/References.html">Preferences</a></p>
+</div>
 
-    <p><a href="./Documents/contact.html">Contact me</a></p>
+<!-- LINKS -->
+<div class="section">
+    <h2>Links</h2>
+    <p><a href="https://www.linkedin.com/in/kurt-berglund-4631851a">LinkedIn Profile</a></p>
+    <p><a href="./Documents/References.html">References</a></p>
+    <p><a href="./Documents/contact.html">Contact Me</a></p>
+</div>
 
-<footer>
-    <p></p>© Kurt Berglund</p>
-</footer>  
-                
 </body>
 </html>
+
 
 
 
