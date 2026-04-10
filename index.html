@@ -5,52 +5,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kurt Berglund – Resume</title>
 
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <style>
+        /* NETWORK-THEMED BACKGROUND */
         html {
-            background: white; /* Your original background */
+            background: 
+                linear-gradient(rgba(0, 20, 40, 0.85), rgba(0, 20, 40, 0.85)),
+                url('https://www.transparenttextures.com/patterns/circuit-board.png');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #fff;
         }
+
         body {
             font-family: Arial, sans-serif;
-            margin: 40px;
-            line-height: 1.6;
+            margin: 40px auto;
+            max-width: 900px;
+            background: rgba(255, 255, 255, 0.92);
             color: #222;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 25px rgba(0,0,0,0.4);
         }
-        h1, h2, h3 {
+
+        /* HEADER BAR */
+        .header-bar {
+            background: #003366;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .header-bar h1 {
+            margin: 0;
+            font-size: 2.2em;
+        }
+
+        .profile-pic {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            border-radius: 6px;
+            height: 120px;
+            width: 120px;
+            object-fit: cover;
+            border: 3px solid white;
+        }
+
+        h2 {
             color: #003366;
+            border-bottom: 2px solid #003366;
+            padding-bottom: 5px;
+            margin-top: 40px;
         }
+
+        h3 {
+            color: #003366;
+            margin-bottom: 5px;
+        }
+
         .section {
             margin-bottom: 35px;
         }
-        .profile-pic {
-            float: right;
-            margin-left: 20px;
-            border-radius: 6px;
+
+        ul {
+            margin-top: 5px;
         }
+
+        /* PDF BUTTON */
+        .pdf-button {
+            background: #003366;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 10px;
+        }
+
+        .pdf-button i {
+            margin-right: 8px;
+        }
+
+        .pdf-button:hover {
+            background: #0055aa;
+        }
+
         a {
             color: #003366;
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
+        }
+
+        .icon {
+            margin-right: 6px;
         }
     </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
-<h1>Kurt Berglund</h1>
+<!-- HEADER BAR -->
+<div class="header-bar">
+    <h1>Kurt Berglund</h1>
+    <img src="./Assets/Images/MyPic.PNG" alt="Kurt Berglund" class="profile-pic">
 
-<!-- Profile Pic -->
-<img src="./Assets/Images/MyPic.PNG" 
-     alt="Kurt Berglund" 
-     height="150" 
-     width="150" 
-     class="profile-pic">
+    <!-- PDF BUTTON -->
+    <button class="pdf-button" onclick="window.print()">
+        <i class="fa-solid fa-file-pdf"></i> Download PDF
+    </button>
+</div>
 
 <!-- SUMMARY -->
 <div class="section">
-    <h2>Professional Summary</h2>
+    <h2><i class="fa-solid fa-user icon"></i>Professional Summary</h2>
     <p>
         Systems and Network Engineer with 10+ years of experience supporting enterprise and federal environments. 
         Strong background in systems administration, network engineering, cybersecurity, cloud, and virtualization. 
@@ -59,9 +135,9 @@
     </p>
 </div>
 
-<!-- CORE SKILLS -->
+<!-- SKILLS -->
 <div class="section">
-    <h2>Core Skills & Knowledge</h2>
+    <h2><i class="fa-solid fa-gears icon"></i>Core Skills & Knowledge</h2>
 
     <h3>Systems</h3>
     <p>Windows Server, RedHat, Ubuntu, CentOS, macOS, Windows 10/11</p>
@@ -69,7 +145,7 @@
     <h3>Networking</h3>
     <p>
         Cisco • Meraki • Juniper • Palo Alto • Firepower • HA/Failover • Network Monitoring • DNS • DHCP • NAT • ACLs<br>
-        <b>Switching:</b> VLANs • Trunking • Inter‑VLAN Routing • Spanning Tree (STP/RSTP/MSTP) • Port Security • VTP • IPSec/SSL VPN<br>
+        <b>Switching:</b> VLANs • Trunking • Inter‑VLAN Routing • STP/RSTP/MSTP • Port Security • VTP • IPSec/SSL VPN<br>
         <b>Routing Protocols:</b> OSPF • EIGRP • BGP • RIP • Static Routing<br>
         <b>Network Protocols:</b> TCP/IP • UDP • ICMP • LLDP • CDP
     </p>
@@ -98,7 +174,7 @@
 
 <!-- CERTIFICATIONS -->
 <div class="section">
-    <h2>Certifications</h2>
+    <h2><i class="fa-solid fa-certificate icon"></i>Certifications</h2>
     <ul>
         <li>ITIL v3 Foundation</li>
         <li>Microsoft Certified Professional</li>
@@ -111,7 +187,7 @@
 
 <!-- EXPERIENCE -->
 <div class="section">
-    <h2>Professional Experience</h2>
+    <h2><i class="fa-solid fa-briefcase icon"></i>Professional Experience</h2>
 
     <h3>Systems / Network Engineer</h3>
     <p><i>NCCoE / NIST – ITC Federal | Rockville/Gaithersburg, MD</i> — June 2024 – Present</p>
@@ -120,91 +196,6 @@
         <li>Managed DNS via Infoblox; supported VPN, network, and RSA authentication issues.</li>
         <li>Assisted with firewall policy cleanup and rule creation (Palo Alto, Firepower).</li>
         <li>Automated RHEL patching using Ansible/YAML; developed Bash scripts for baselines.</li>
-        <li>Remediated vulnerabilities identified through Nessus across Linux/Windows systems.</li>
-        <li>Applied DISA STIGs and GPO hardening for federal compliance.</li>
-        <li>Monitored system/network performance using SolarWinds Orion.</li>
-        <li>Built new lab networks including VLANs, Wi‑Fi, and documentation.</li>
-        <li>Created and updated network diagrams using Visio.</li>
-        <li>Contributed to modernization projects:
-            <ul>
-                <li>Juniper → Cisco switch migration</li>
-                <li>Juniper SRX → Cisco Firepower</li>
-                <li>Aruba → Meraki wireless</li>
-                <li>Spine‑leaf topology deployment</li>
-                <li>Border router upgrade</li>
-                <li>Palo Alto Prisma & Cortex integration</li>
-            </ul>
-        </li>
-        <li>Configured Syslog server for centralized logging.</li>
-        <li>Performed onboarding tasks: AD accounts, OU placement, VPN provisioning.</li>
-        <li>Assisted with OKTA integration across applications.</li>
-    </ul>
-
-    <h3>Systems Engineer</h3>
-    <p><i>Department of Justice – TRIA / Quadrant / Intellidyne | Washington, DC</i> — Oct 2021 – Apr 2024</p>
-    <ul>
-        <li>Migrated backup operations from Veeam to Avamar; ensured successful daily backups.</li>
-        <li>Upgraded SCOM 2012 → 2016; configured AWS monitoring.</li>
-        <li>Supported printer rollouts, IP assignments, drivers, and XMedius email‑to‑fax.</li>
-        <li>Provided Tier 2 support for BitLocker, AD, and hardware/software issues.</li>
-        <li>Built and decommissioned servers (vSphere, VxRail); deployed VxRail in Dallas.</li>
-        <li>Administered BigFix, SCCM, SCOM, Citrix, XenMobile, VMware.</li>
-        <li>Updated Cisco switch OS versions and deployed WhatsUp Gold monitoring.</li>
-    </ul>
-
-    <h3>IT Support Specialist</h3>
-    <p><i>Department of Energy – OneSource | Germantown, MD</i> — Oct 2020 – Sep 2021</p>
-    <ul>
-        <li>Delivered Tier 1/2 support for 5,000+ users across DOE locations.</li>
-        <li>Troubleshot wired/wireless connectivity, hardware/software issues, and mobile devices.</li>
-        <li>Supported VPN, RSA SecurID, AD, Entrust, BitLocker, McAfee encryption.</li>
-    </ul>
-
-    <h3>Information Systems Administrator / Manager</h3>
-    <p><i>JSI – John Staurulakis Inc. | Greenbelt, MD</i> — Jul 2013 – Sep 2020</p>
-    <ul>
-        <li>Led system/network administration, IT security, desktop support, and operations.</li>
-        <li>Conducted vulnerability assessments, exploitation testing, and remediation.</li>
-        <li>Implemented VMware environment and HPE SAN storage.</li>
-        <li>Migrated Exchange 2003 → Office 365; administered SharePoint 2013.</li>
-        <li>Supported Cisco firewalls, routers, switches, IP phones, and VPN configurations.</li>
-    </ul>
-
-    <h3>Desktop Support Specialist (Tier 2)</h3>
-    <p><i>MedImmune – TEKsystems | Gaithersburg, MD</i> — Feb 2012 – Jul 2013</p>
-    <ul>
-        <li>Provided Tier 2 support for 2,000+ users; imaged/deployed systems using SCCM.</li>
-        <li>Supported Blackberry/iPhone, VPN, printers, encryption software, and AD accounts.</li>
-    </ul>
-
-    <h3>Helpdesk Analyst / Service Desk Analyst</h3>
-    <p><i>NIST – Powertek | Gaithersburg, MD</i> — Jun 2010 – Feb 2012</p>
-    <ul>
-        <li>Delivered first‑line support for 5,000+ users across multiple NIST locations.</li>
-        <li>Managed AD accounts, configured desktops/laptops/mobile devices, and supported VPN.</li>
-        <li>Restored files using Tivoli Storage Manager; resolved issues via LANDesk and Remedy.</li>
-    </ul>
-</div>
-
-<!-- EDUCATION -->
-<div class="section">
-    <h2>Education</h2>
-    <ul>
-        <li>A.A.S., Network Information Systems — TESST College of Technology (2009)</li>
-        <li>B.S., Business Administration (Management) — AMA Computer College (2004)</li>
-    </ul>
-</div>
-
-<!-- LINKS -->
-<div class="section">
-    <h2>Links</h2>
-    <p><a href="https://www.linkedin.com/in/kurt-berglund-4631851a">LinkedIn Profile</a></p>
-    <p><a href="./Documents/References.html">References</a></p>
-    <p><a href="./Documents/contact.html">Contact Me</a></p>
-</div>
-
-</body>
-</html>
 
 
 
